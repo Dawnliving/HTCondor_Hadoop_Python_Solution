@@ -16,13 +16,7 @@ sudo apt install python3.10-venv -y
 
 Note: python3.10-venv is determined by python version, which installed in the linux.
 
-## HTCondor Submission
-
-```shell
-condor_submit arrival.sub
-```
-
-## File Tree Structure
+### File Tree Structure
 
 arrival.sub
 
@@ -43,3 +37,10 @@ main.py
 --> json_parse.py
 
 -->config.json
+
+## HTCondor Submission
+
+```shell
+condor_submit arrival.sub
+```
+
