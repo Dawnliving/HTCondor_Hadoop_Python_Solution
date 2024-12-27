@@ -1,0 +1,16 @@
+{
+  "dataset":{
+    "arrivals":{
+      "hive": "hive://ubuntu@HMaster:10000/arrivals",
+      "local":"./arrivals.csv"
+    },
+    "country":{
+      "hadoop": "http://HSlave1:9864/webhdfs/v1/dataset/world.csv?op=OPEN&namenoderpcaddress=172.31.16.36:9000&offset=0",
+      "local":"./world.csv"
+    },
+    "covid19":{
+      "hadoop": "http://HSlave1:9864/webhdfs/v1/dataset/biweekly_deaths.csv?op=OPEN&namenoderpcaddress=172.31.16.36:9000&offset=0",
+      "local":"./biweekly_deaths.csv"
+    }
+  }
+}

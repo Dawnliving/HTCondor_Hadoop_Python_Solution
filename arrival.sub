@@ -1,0 +1,20 @@
+environment = "HOME=/tmp PATH=/tmp/.local/bin:$(PATH)"
+getenv = True
+
+executable              = /bin/bash
+arguments               = setup.sh
+
+
+log                     = logs/arrival.log
+output                  = logs/arrival.out
+error                   = logs/arrival.err
+
+should_transfer_files   = Yes
+transfer_input_files = main.py, requirements.txt, json_parse.py, config.json, setup.sh
+when_to_transfer_output = ON_EXIT
+
+request_cpus            = 2
+request_memory          = 4G
+request_disk            = 1G
+
+queue
