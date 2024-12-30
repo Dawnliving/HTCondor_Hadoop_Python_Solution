@@ -1,5 +1,31 @@
 # HTCondor + Hadoop + Python
 
+## Job working directory
+
+after testing, condor job user is **nobody**
+
+hence, make working directory for **nobody**
+
+create working directory
+
+```shell
+sudo mkdir /home/nobody
+```
+
+change ownership of this directory
+
+```shell
+sudo chown nobody:nogroup /home/nobody/
+```
+
+change authority of this directory, to let everyone can read(4), write(2), execute(1)
+
+```shell
+sudo chmod 777 /home/nobody/
+```
+
+And define the job working directory at the first line of sub file.
+
 ## Job definition
 
 ### Pre-condition 
