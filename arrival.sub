@@ -1,4 +1,5 @@
-environment = "HOME=/tmp PATH=/tmp/.local/bin:$(PATH)"
+#environment = "HOME=/tmp PATH=/tmp/.local/bin:$(PATH)"
+environment = "HOME=/home/nobody/condorjob PATH=/home/nobody/condorjob/bin:$(PATH)"
 getenv = True
 
 executable              = /bin/bash
