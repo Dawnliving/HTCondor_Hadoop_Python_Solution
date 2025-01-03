@@ -202,9 +202,15 @@ def top_10_male_arrivals(top_ten_male_arrivals):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    dataset = import_dataset("main", "local")
-    country_code = import_dataset("country", "local")
-    covid19 = import_dataset("covid19", "local")
+    # product
+    dataset = import_dataset("main", "remote")
+    country_code = import_dataset("country", "remote")
+    covid19 = import_dataset("covid19", "remote")
+
+    # local test
+    # dataset = import_dataset("main", "local")
+    # country_code = import_dataset("country", "local")
+    # covid19 = import_dataset("covid19", "local")
 
     # dataset after data preprocessing
     dfc = data_pre_processing(country_code, dataset, covid19)
