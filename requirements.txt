@@ -17,7 +17,7 @@ thrift==0.21.0
 thrift-sasl==0.4.3
 typing_extensions==4.12.2
 tzdata==2024.2
-matplotlib
+matplotlib==3.9.4
 
 pip~=24.3.1
 wheel~=0.45.1
