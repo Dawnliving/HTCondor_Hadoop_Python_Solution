@@ -14,6 +14,7 @@ error                   = logs/arrival.err
 
 should_transfer_files   = Yes
 transfer_input_files = main.py, requirements.txt, json_parse.py, config.json, setup.sh
+transfer_output_files = output/
 when_to_transfer_output = ON_EXIT
 
 request_cpus            = 2
