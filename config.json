@@ -1,7 +1,7 @@
 {
   "dataset":{
     "arrivals":{
-      "hive": "hive://ubuntu@HMaster:10000/arrivals",
+      "hive": "hive://ubuntu@HMaster:10000/wqd7007",
       "local":"./dataset/arrivals.csv"
     },
     "country":{
